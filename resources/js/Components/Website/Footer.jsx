@@ -44,8 +44,8 @@ export default function Footer() {
                             <li><Link href="/" className="text-gray-400 hover:text-white">Home</Link></li>
                             <li><Link href="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
                             <li><Link href="/services" className="text-gray-400 hover:text-white">Services</Link></li>
-                            <li><Link href="/case-studies" className="text-gray-400 hover:text-white">Case Studies</Link></li>
-                            <li><Link href="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
+                            {/* <li><Link href="/case-studies" className="text-gray-400 hover:text-white">Case Studies</Link></li> */}
+                            {/* <li><Link href="/blog" className="text-gray-400 hover:text-white">Blog</Link></li> */}
                             <li><Link href="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
                         </ul>
                     </div>

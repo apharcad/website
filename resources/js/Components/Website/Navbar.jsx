@@ -87,12 +87,12 @@ export default function Navbar({ auth }) {
                             <Link href="/pages" className={isActive('/pages')}>
                                 <motion.span whileHover={{ y: -2 }} transition={{ type: 'spring', stiffness: 300 }}>Pages</motion.span>
                             </Link>
-                            <Link href="/blog" className={isActive('/blog')}>
+                            {/* <Link href="/blog" className={isActive('/blog')}>
                                 <motion.span whileHover={{ y: -2 }} transition={{ type: 'spring', stiffness: 300 }}>Blog</motion.span>
-                            </Link>
-                            <Link href="/contact" className={isActive('/contact')}>
+                            </Link> */}
+                            {/* <Link href="/contact" className={isActive('/contact')}>
                                 <motion.span whileHover={{ y: -2 }} transition={{ type: 'spring', stiffness: 300 }}>Contact</motion.span>
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     </div>
 
