@@ -15,25 +15,25 @@ export default function Welcome({ auth }) {
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('.reveal-section');
-            
+
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
-                
+
                 if (sectionTop < windowHeight * 0.75) {
                     section.classList.add('revealed');
                 }
             });
         };
-        
+
         window.addEventListener('scroll', handleScroll);
         handleScroll(); // Call once on load
-        
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     // Animation variants
     const pageVariants = {
         initial: {
@@ -53,7 +53,7 @@ export default function Welcome({ auth }) {
             }
         }
     };
-    
+
     // For staggered children animations
     const staggerContainer = {
         hidden: { opacity: 0 },
@@ -64,7 +64,7 @@ export default function Welcome({ auth }) {
             }
         }
     };
-    
+
     // Fade-up animation
     const fadeUpItem = {
         hidden: { opacity: 0, y: 20 },
@@ -109,7 +109,7 @@ export default function Welcome({ auth }) {
 
                 <div className="min-h-screen bg-white overflow-hidden">
                     <Navbar auth={auth} />
-                    
+
                     <motion.section
                         className="hero-section"
                         initial={{ opacity: 0 }}
@@ -118,7 +118,7 @@ export default function Welcome({ auth }) {
                     >
                         <Hero />
                     </motion.section>
-                    
+
                     <motion.section
                         className="reveal-section"
                         initial={{ opacity: 0, y: 30 }}
@@ -128,7 +128,7 @@ export default function Welcome({ auth }) {
                     >
                         <Services />
                     </motion.section>
-                    
+
                     <motion.section
                         className="reveal-section"
                         initial={{ opacity: 0, y: 30 }}
@@ -138,7 +138,7 @@ export default function Welcome({ auth }) {
                     >
                         <ServicesDetailed />
                     </motion.section>
-                    
+
                     <motion.section
                         className="reveal-section"
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -148,7 +148,7 @@ export default function Welcome({ auth }) {
                     >
                         <Statistics />
                     </motion.section>
-                    
+
                     <motion.section
                         className="reveal-section"
                         initial={{ opacity: 0, y: 30 }}
@@ -158,7 +158,7 @@ export default function Welcome({ auth }) {
                     >
                         <Community />
                     </motion.section>
-                    
+
                     <motion.section
                         className="reveal-section"
                         initial={{ opacity: 0, y: 30 }}
@@ -168,7 +168,7 @@ export default function Welcome({ auth }) {
                     >
                         <CaseStudy />
                     </motion.section>
-                    
+
                     <motion.footer
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
