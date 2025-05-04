@@ -103,7 +103,7 @@ export default function ServicesDetailed() {
                         <div className="mt-8 pt-6 border-t border-gray-200 flex justify-between items-center">
                             <div className="flex items-center">
                                 <div className="relative mr-4">
-                                    <img src="/images/avatar.jpg" alt="Support Agent" className="w-12 h-12 rounded-full border-2 border-primary object-cover" />
+                                    <img src="/images/contact us 1.jpg" alt="Support Agent" className="w-12 h-12 rounded-full border-2 border-primary object-cover" />
                                     <div className="absolute -bottom-1 -right-1 bg-green-500 w-4 h-4 rounded-full border-2 border-white"></div>
                                 </div>
                                 <div>
