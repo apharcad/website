@@ -15,6 +15,22 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                // Colors from Apharcad logo
+                'apharcad-yellow': '#FFDA44', // Light yellow
+                'apharcad-pink': '#F7186A',   // Pink
+                'apharcad-purple': '#4A0082', // Deep purple
+                
+                // Modified variations for UI elements
+                'apharcad-yellow-light': '#FFF2BD',
+                'apharcad-pink-light': '#FEE5EE',
+                'apharcad-purple-light': '#EDE2F5',
+                
+                // Text and background colors
+                'primary': '#4A0082',    // Deep purple for primary actions
+                'secondary': '#F7186A',  // Pink for secondary elements
+                'accent': '#FFDA44',     // Yellow for accents/highlights
+            },
         },
     },
 
