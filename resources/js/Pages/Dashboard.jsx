@@ -1,26 +1,46 @@
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head } from '@inertiajs/react';
+// 4. Create React Inertia Pages (resources/js/Pages/Home.jsx)
+// ------------------------------------------------------------
+import { Head } from "@inertiajs/react";
+import Navbar from "../Components/Navbar.jsx";
+import Hero from "../Components/Hero.jsx";
+import Services from "../Components/About.jsx";
+import Footer from "../Components/Footer";
 
-export default function Dashboard() {
+export default function Home() {
     return (
-        <AuthenticatedLayout
-            header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800">
-                    Dashboard
-                </h2>
-            }
-        >
-            <Head title="Dashboard" />
+        <>
+            <Head title="IT Solutions & Services" />
+            <Navbar />
+            <Hero />
+            <Services />
+            <Footer />
+        </>
+    );
+}
 
-            <div className="py-12">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
-                        <div className="p-6 text-gray-900">
-                            You're logged in!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </AuthenticatedLayout>
+// 5. Components (Example: resources/js/Components/Navbar.jsx)
+// ------------------------------------------------------------
+export function Navbar() {
+    return (
+        <nav className="bg-white shadow-md p-4 flex justify-between items-center">
+            <div className="text-xl font-bold">Infetech</div>
+            <ul className="flex space-x-4">
+                <li>
+                    <a href="#" className="text-gray-700 hover:text-purple-500">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" className="text-gray-700 hover:text-purple-500">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#" className="text-gray-700 hover:text-purple-500">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
     );
 }
